@@ -1,0 +1,45 @@
+/* external css */
+*{
+    /* universal selector */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+* ul li {
+    list-style-type: none;
+}
+
+body{
+    /* element selector */
+    /* height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden; */
+}
+
+.section{
+    /* class selector */
+}
+
+#heading{
+    /* id selector */
+    display: inline-block;
+    border: 2px solid red;
+    height: 300px;
+    width: 500px;
+    padding: 20px;
+}
+
+.navList{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.navList li{
+    background-color: red;
+    padding: .8rem;
+
+}
