@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.grandParent {
+  height: 100vh;
+  border: 2px solid green;
+}
+.parent {
+  height: 100px;
+  width: 100px;
+  border: 2px solid red;
+  /* border-width: 2px;
+    border-style: solid;
+    border-color: red; */
+  /* border-right: 2px solid red;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    border-left: 2px solid red; */
+}
+.parent1 {
+  background-color: white;
+  /* margin: 100px; */
+  /* margin: 100px 500px; */
+  /* 1st top and bottom and 2nd left and right */
+  /* margin: 0px 100px 500px; */
+  /* 1st top 2nd left and right 3rd bottom */
+  /* margin: 0px 100px 500px 0px; */
+  /* 1st top 2nd right 3rd bottom 4th left */
+  /* margin-top: 10px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    margin-left: 30px; */
+
+  /*  */
+
+  /* padding: 100px; */
+  /* padding: 100px 500px; */
+  /* 1st top and bottom and 2nd left and right */
+  /* padding: 0px 100px 500px; */
+  /* 1st top 2nd left and right 3rd bottom */
+  /* padding: 0px 100px 500px 0px; */
+  /* 1st top 2nd right 3rd bottom 4th left */
+  /* padding-top: 10px;
+    padding-bottom: 50px;
+    padding-right: 10px;
+    padding-left: 30px; */
+}
+.parent2 {
+  background-color: black;
+  animation-name: test;
+  animation-duration: 10s;
+  animation-iteration-count: 4;
+  animation-delay: 10s;
+  position: relative;
+}
+
+@keyframes test {
+  0% {
+    background-color: black;
+    left: 0;   
+  }
+  25% {
+    /* background-color: yellow; */
+    left: 200px;
+    top: 0;
+  }
+  50%{
+    left: 200px;
+    top: 200px;
+  }
+  75%{
+    left : 0;
+    top: 200px;
+  }
+  100%{
+    top: 0
+
+  }
+}
+
+.parent3 {
+  background-color: yellow;
+}
+.child3 {
+  width: 50%;
+  height: 50%;
+  background-color: aquamarine;
+}
+.parent4 {
+  background-color: blue;
+  position: sticky;
+  top: 30px;
+}
+.parent5 {
+  background-color: hotpink;
+}
+
+.grandParent1 {
+  background-color: green;
+}
+.grandParent2 {
+  background-color: red;
+}
