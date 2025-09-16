@@ -1,3 +1,10 @@
+:root{
+  --primaryBgColor : #ffffff;
+  --primaryFontColor : grey;
+  --secondaryBgColor : yellow;
+  --secondaryFontColor : blue;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +17,7 @@
 .parent {
   height: 100px;
   width: 100px;
-  border: 2px solid red;
+  border: 2px solid var(--secondaryFontColor);
   /* border-width: 2px;
     border-style: solid;
     border-color: red; */
@@ -20,7 +27,7 @@
     border-left: 2px solid red; */
 }
 .parent1 {
-  background-color: white;
+  background-color: var(--primaryBgColor);
   /* margin: 100px; */
   /* margin: 100px 500px; */
   /* 1st top and bottom and 2nd left and right */
@@ -46,48 +53,41 @@
     padding-bottom: 50px;
     padding-right: 10px;
     padding-left: 30px; */
+
+    /* 
+        multicolumn , paginaion, dropdwon, float, bootstrap, 
+    */
 }
+
 .parent2 {
-  background-color: black;
-  animation-name: test;
-  animation-duration: 10s;
-  animation-iteration-count: 4;
-  animation-delay: 10s;
+  background-color: var(--primaryFontColor);
   position: relative;
+  animation: loopAnim 50s linear infinite;
 }
 
-@keyframes test {
-  0% {
-    background-color: black;
-    left: 0;   
-  }
-  25% {
-    /* background-color: yellow; */
-    left: 200px;
-    top: 0;
-  }
-  50%{
-    left: 200px;
-    top: 200px;
-  }
-  75%{
-    left : 0;
-    top: 200px;
-  }
-  100%{
-    top: 0
 
-  }
-}
+
 
 .parent3 {
-  background-color: yellow;
+  background-color: var(--secondaryBgColor);
+  /* transition: 2s ease-in-out; */
+  
+  /* transition-delay: 2s; */
+  transition-duration: 5s;
+  /* transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715); */
+  /* transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); */
+  /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
 }
-.child3 {
+
+.parent:hover{
+  width: 500px;
+  transform: scale(2);
+}
+/* .child3 {
   width: 50%;
   height: 50%;
   background-color: aquamarine;
-}
+} */
 .parent4 {
   background-color: blue;
   position: sticky;
@@ -99,7 +99,31 @@
 
 .grandParent1 {
   background-color: green;
+  display: flex;
 }
 .grandParent2 {
   background-color: red;
 }
+
+
+/* @media screen {
+  
+} */
+
+@media (max-width: 768px) {
+    .grandParent1{
+      background-color: black;
+    }
+}
+
+@media (max-width: 500px) {
+    .grandParent1{
+      background-color: white;
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+/* @media not screen {
+  
+} */
