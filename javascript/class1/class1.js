@@ -1,75 +1,91 @@
-// function 
 
-// y = hello(x)
+const arr = [1, "Aeelo", true, "50","10","1","20","30","41", [1,2,3,4], {name:"rishabh"}] // array literals
+console.log(arr);
 
+// constructor
+const arr2 = new Array()
+console.log(arr2);
 
-// parameterized 
+// using a method
+const arr3 = Array.of()
+console.log(arr3);
 
-
-// non parameterized
-// func dec
-// console.log(hello());
-// function hello() {
-//   console.log("hello");
+// for(let i = 0 ; i<arr.length; i++){
+//   console.log(arr[i]);
 // }
-// console.log(hello());
 
-// // named func exp
-// console.log(hey);
-// var i = 0
-// var hey = function cuvette() {
+// for(const value of arr){
+//   console.log(value);
+// }
+
+
+// ARRAY METHODS FOR ADDING AND REMOVING ELEMENTS
+
+// arr.push(11,22,33,44,55) // add elements in last
+// console.log(arr);
+
+// arr.pop() // used to pop 1 ele from the last
+// console.log(arr);
+// arr.pop()
+// console.log(arr);
+// arr.pop()
+// console.log(arr);
+// arr.pop()
+// console.log(arr);
+// arr.pop()
+// console.log(arr);
+// arr.pop()
+// console.log(arr);
+
+// arr.unshift(10,20,30,40) // add ele in the start
+// console.log(arr);
+
+// arr.shift() // removes ele from the start
+
+// console.log(arr);
+
+// const newArr = arr.slice(2)
+// console.log(arr);
+// console.log(newArr);
+// console.log(arr);
+
+// const newArr2 = arr.splice(2, 0, "tata", "tata2", "tata3", "tata4")
+// console.log(arr);
+// console.log(newArr2);
+// console.log(arr);
+
+// concat
+
+
+// ARRAY METHODS OR SEARCHING
+
+console.log(arr.includes("1"))
+console.log(arr.indexOf("1"))
+console.log(arr.lastIndexOf("1"))
+// console.log(arr.findIndex("1"))
+
+// SORTING and REORDERING
+
+console.log(arr.sort())
+console.log(arr.reverse())
+
+
+
+
+// let i = 0
+// while(i<arr.length){
+//   console.log(arr[i]);
 //   i++
-//   if(i<10){
-//     hey()
-//     console.log(i);
-//   }else{
-//     console.log("hello");
-//   }
-// }
-// hey()
-// cuvette()
-// console.log(hey());
-
-
-// // Anno funct
-// (function() {
-//   console.log("hello");
-// })
-
-
-
-// // func exp
-// const hey2 = function() {
-//   console.log("hello");
-// }
-
-// // arrow 
-// const hey3 = () => {
-//   console.log("hello");
-// }
-
-// // IIFE
-// (function() {
-//   console.log("hello");
-// })()
-
-// // async
-// async function name() {
-  
-// }
-
-// const hey4 = async () => {
-//   console.log("hello");
 // }
 
 
-// for(const i =0; i<=10; i++){
-//   console.log(i);
-// }
+// compilor
+// interprator
 
-(function() {
-  console.log("hello");
-  return function hello(){
-    console.log("kya haal hai????");
-  }
-})()()()
+
+// for
+// while
+// do while
+// for each
+// for of
+
