@@ -214,24 +214,85 @@
 
 // // console.log(obj["sharma"]);
 
-let arr = [1,2,3,4,5]
 
 const obj = {
     name:"rishabh",
-    age : 24
+    age : 24,
+    0: 400,
+    1: 500,
+    2: 600
 }
 
-function hello() {
-    
+
+
+let arr = [1,2,3,4,5]
+const arr2= [10,20,30,40]
+arr.hii = function () {
+    return "hiiii"
 }
 
+// arr.pop()
+// console.log(arr);
+// arr.hii.delete
+// delete(arr.hii)
+// console.log(arr);
+
+// console.log(Array.__proto__);
+
+
+Array.prototype.hello = function () {
+    return "Thanks"
+}
+delete(Array.prototype.push)
+if(!Array.prototype.push){
+    Array.prototype.nancy = function () {
+        let length = this.length
+
+        for(let i = 0; i<arguments.length; i++){
+            arr[length]= arguments[i]
+            length++
+        }
+
+
+        return length
+    }
+}
+console.log(arr.__proto__);
+arr.nancy(10)
+arr.nancy("nancy")
+arr.nancy("atat")
+console.log(arr);
+
+// console.log(arr.hello());
+// console.log(arr2.hello());
+// console.log(arr.__proto__);
+
+
+// [0:1, 1:2, 2:3, 3:4, 4:5,]
 // console.log(arr.__proto__);
 // console.log(arr.__proto__[0]);
-console.log(arr.__proto__);
-console.log("leng of arr", arr.__proto__.length);
-console.log(arr.__proto__.push("tata"));
-const arr2 = arr.__proto__.push("bye bye")
-console.log("len of arr",arr.__proto__.length);
+// console.log(arr[0]);
+// console.log(arr[1]);
+// console.log(arr[2]);
+// console.log("leng of arr", arr.__proto__.length);
+// console.log(arr.__proto__);
+// arr.__proto__.push(()=>{
+//     return "dukh"
+// })
+// arr.__proto__.push(function hello() {
+//     return "dard"
+// })
+// arr.__proto__.push("bye bye")
+// console.log(arr.__proto__[1]());
+
+// Array.prototype.hello = function () {
+//     return "hiii"
+// }
+
+// console.log(Array.prototype);
+
+// console.log("len of arr",arr.__proto__.length);
+
 // console.log(arr.__proto__.push);
 // console.log(arr.__proto__.push());
 // console.log(arr.push("tata"));
