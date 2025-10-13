@@ -330,3 +330,58 @@ for (var i = 0; i < 5; i++) {
 //     console.log("hello 3")
 // }, 2000)
 // console.log("tata 4");
+
+// const cart = ["pants", "shirt", "shoes"];
+
+// function CreateOrder(cart) {
+//   // we will pass this cart item in api
+//   return orderId;
+// }
+// function proceedTopayment(orderId) {
+//   // we will pass orderId in api
+//   return amount;
+// }
+// function orderInvoice() {
+    
+// }
+// function valletUpdate(amount) {
+//   // we will pass amount in api
+// }
+// // passing the callback function to create order api
+// CreateOrder(cart, function (){
+//     proceedTopayment(function (){
+//         orderInvoice(function (){
+//             valletUpdate()
+//         })
+//     })
+// });
+// inversion of control
+//  pyramid of doom (callback hell)
+// const promise = CreateOrder(cart)
+// attaching the callback function 
+// promise.then(function(){
+//     proceedTopayment()
+// }).then(()=>{
+//     orderInvoice()
+// }).then(function(){
+//     valletUpdate()
+// }).catch(function(){
+//     console.log(err)
+// })
+// .then chaining
+
+// async await 
+
+
+// api call
+
+const apiEndpoint = "https://api.github.com/users"
+const promise = fetch(apiEndpoint)
+promise.then((data)=>{
+   return data.json() 
+}).then((data)=>{
+    console.log(data);
+}).catch((err)=>{
+    console.log(err);
+    
+})
