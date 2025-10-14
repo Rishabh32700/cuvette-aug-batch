@@ -314,11 +314,11 @@ const arr = [10, 25, 30, 45, 50, 60, 55];
 // return a func
 // other as a parameter
 
-for (var i = 0; i < 5; i++) {
-  setTimeout(() => {
-    console.log(i);
-  }, 1000 * i);
-}
+// for (var i = 0; i < 5; i++) {
+//   setTimeout(() => {
+//     console.log(i);
+//   }, 1000 * i);
+// }
 
 // console.log("tata 1");
 // setTimeout(()=>{
@@ -342,7 +342,7 @@ for (var i = 0; i < 5; i++) {
 //   return amount;
 // }
 // function orderInvoice() {
-    
+
 // }
 // function valletUpdate(amount) {
 //   // we will pass amount in api
@@ -358,7 +358,7 @@ for (var i = 0; i < 5; i++) {
 // inversion of control
 //  pyramid of doom (callback hell)
 // const promise = CreateOrder(cart)
-// attaching the callback function 
+// attaching the callback function
 // promise.then(function(){
 //     proceedTopayment()
 // }).then(()=>{
@@ -370,18 +370,43 @@ for (var i = 0; i < 5; i++) {
 // })
 // .then chaining
 
-// async await 
-
+// async await
 
 // api call
 
-const apiEndpoint = "https://api.github.com/users"
-const promise = fetch(apiEndpoint)
-promise.then((data)=>{
-   return data.json() 
-}).then((data)=>{
-    console.log(data);
-}).catch((err)=>{
-    console.log(err);
-    
-})
+// const apiEndpoint = "https://api.github.com/users"
+// const promise = fetch(apiEndpoint)
+// promise.then((data)=>{
+//    return data.json()
+// }).then((data)=>{
+//     console.log(data);
+// }).catch((err)=>{
+//     console.log(err);
+
+// })
+
+const p = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve([1, 2, 3, 4, 5]);
+  }, 5000);
+});
+// console.log(p);
+// p is a promise
+async function hello() {
+  // const value = await p
+  // console.log(value);
+  // const myTrick = p.then((data) => {
+  //   console.log("data => ", data);
+  //   return data;
+  // });
+
+  const value = await p
+  console.log("hii guysss kese hoooo !!! =>", value);
+  // setTimeout(() => {
+    console.log("my trick", value);
+    value.map((ele) => {
+        console.log(ele);
+      });
+  // }, 10000);
+}
+hello();
